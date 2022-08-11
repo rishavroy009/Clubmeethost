@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubMeet | Payment Form</title>
+    <link rel="stylesheet" href="paymentpage_rohit.css">
+    <link rel="shortcut icon" href="../Image/clubmeet.png" type="image/x-icon">
+    <style>
+        .formerror{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="homepage_rs_parth.html" name="paymentform" onsubmit="return validateForm()" >
+        <h1 class="main_heading">Payment Form</h1>
+        <span class="heading">Required Fields are followed by *</span>
+
+        <p><span class="heading">Payment Amount </span> <input type="text" name="" id="fclubpayment" disabled></p>
+        <p><span class="heading"> Club Name </span> <input type="text" name="" id="fclubname" disabled></p>
+        
+        <h2 class="main_subheading">Contact Information</h2>
+
+        
+        <p> <span class="heading">Name: * </span> <span class="formerror" id="formerror_name"> </span> <input type="text" name="name" id="fname" required></p>
+        <p class="heading"> Gender*</p> <span class="formerror" id="formerror_gender"> </span>
+        <fieldset>
+            
+            
+            <p>
+            Male <input type="radio" name="gender" id="male" required >
+            female <input type="radio" name="gender" id="female" required >
+            </p>
+        </fieldset> 
+        <p> <span class="heading">Address:</span>  <textarea name="address" id="address" cols="100" rows="8"></textarea></p>
+        <p> <span class="heading">University Email: * </span> <span class="formerror" id="formerror_email"> </span> <input type="email" name="email" id="femail" required ></p>
+        <p>  <span class="heading">Pincode: *</span> <span class="formerror" id="formerror_pincode"> </span> <input type="number" name="pincode" id="fpincode" required ></p>
+        <h2 class="main_subheading">Payment Information</h2>
+        <p> <span class="heading">Card Type: *</span>  
+            <select name="card_type" id="card_type" >
+                <option value="">--Select a Card Type--</option>
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="Rupay">Rupay</option>
+            </select>
+        </p>
+        <p>
+            <span class="heading">Card Number * </span><input type="number" name="card_number" id="fcardnumber" required > <span class="formerror" id="formerror_cardnumber"> </span>
+        </p>
+        <p>
+            <span class="heading">Expiration Date: *</span> <input type="date" name="exp_date" id="exp_date" required >
+        </p>
+        <p>
+            <span class="heading">CVV * </span><input type="password" name="cvv" id="fcvv" required> <span class="formerror" id="formerror_cvv"> </span>
+        </p>
+        <input type="submit" value="Pay Now" >
+    </form>
+
+    <script>
+        
+        document.getElementById("fclubname").value=localStorage.getItem("locclubname");
+        document.getElementById("fclubpayment").value=localStorage.getItem("locclubpayment");
+        
+        function gmail_cons()
+        {
+            var a = document.getElementById("email").value;
+            // alert("I am working ");
+
+            // if(a in "parth")
+            // {
+            //     alert("Parth is not there");
+                
+            // }
+            
+
+            // if("@gmail.com" in a)
+            // {
+                
+            // }
+            // else
+            // {
+            //     alert("Please enter a valid email");
+            // }
+        }
+
+        function validateForm()
+        {
+            var returnval=true;
+            var name=document.getElementById("fname").value;
+            var email=document.getElementById("femail").value;
+            var pincode=document.getElementById("fpincode").value;
+            var cardnumber=document.getElementById("fcardnumber").value;
+            var cvv=document.getElementById("fcvv").value;
+            var a="@chitkara.edu.in";
+
+
+
+            //for clearing of corrected errors
+            document.getElementById("formerror_name").innerHTML=" ";
+            document.getElementById("formerror_email").innerHTML=" ";
+            document.getElementById("formerror_pincode").innerHTML=" ";
+            document.getElementById("formerror_cardnumber").innerHTML=" ";
+            document.getElementById("formerror_cvv").innerHTML=" ";
+            
+
+            if(name.length<5)
+            {
+                
+                document.getElementById("formerror_name").innerHTML="The name is too short";
+                returnval=false;
+            }
+
+            if(email.includes(a))
+            {
+                
+            }
+            else
+            {
+                document.getElementById("formerror_email").innerHTML="Enter a Chitkara Email Id";
+                returnval=false;
+            }
+
+            if(pincode.length!=6)
+            {
+                document.getElementById("formerror_pincode").innerHTML="Enter a valid (6-digit) Pincode.";
+                returnval=false;
+
+            }
+
+            if(cardnumber.length==16 || cardnumber.lenth==15)
+            {
+
+            }
+            else
+            {
+                document.getElementById("formerror_cardnumber").innerHTML="Enter a valid (16-digit) Card Number.";
+                returnval=false;
+                
+            }
+
+            if(cvv.length!=3)
+            {
+                
+                document.getElementById("formerror_cvv").innerHTML=" Enter a valid (3-digit) CVV";
+                returnval=false;
+            }
+
+            if(returnval==false)
+            {
+                alert("Please do the recommended suggestions to fill the form");
+            }
+            return(returnval);
+
+
+
+
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

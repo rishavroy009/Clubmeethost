@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password-Clubmeet</title>
+    <link rel="shortcut icon" href="../Image/clubmeet.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Poppins:wght@300&family=Ubuntu&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dl1
+{
+    background-image: linear-gradient(to top right,rgb(31, 29, 29),rgb(36, 49, 61));
+    background-size: cover;
+    height:100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+#temp1,#temp2
+{
+    text-align: center;
+    color: red;
+}
+#passid::-webkit-inner-spin-button,::-webkit-outer-spin-button
+{
+    display: none;
+}
+#otpid::-webkit-inner-spin-button,::-webkit-outer-spin-button
+{
+    display: none;
+}
+.loginp1
+{
+   margin-top:100px;
+   height: 8%;
+   background-color: rgb(0, 0, 0);
+   border-radius: 50%;
+   margin-bottom:30px;
+}
+.loginp1:hover
+{
+    transform: scale(1.2);
+}
+.spl1
+{
+    font-size:32px;
+    font-family: 'Poppins',sans-serif;
+    text-shadow: 5px 5px 10px gray;
+}
+.dl2
+{
+    margin: auto;
+    width: 10%;
+    border: 2px solid ivory;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px gray;
+    transition: width 3s;
+}
+.spl1:hover~.dl2
+{
+    width: 30%;
+}
+form
+{
+    margin: auto;
+    margin-top: 40px;
+    width: 28%;
+    text-align: left;
+    border: 1px solid rgb(88, 87, 87);
+    border-radius: 20px;
+    font-family: 'Poppins',sans-serif;
+    font-size:1.1em;
+    padding: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.inl1
+{
+    margin-top: 10px;
+    margin-bottom:12px;
+    background-color: transparent;
+    height: 4.5vh;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(88, 87, 87);
+    padding-left: 12px;
+    color: whitesmoke;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1em;
+}
+.btnl1
+{
+    margin-top:15px;
+    margin-bottom: 1.5vh;
+    background-color: gray;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid rgb(88, 87, 87);
+    height:4vh;
+    color: whitesmoke;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+.btnl1:hover
+{
+    background-color: transparent;
+}
+@media screen and (max-width:480px)
+{
+    .loginp1
+    {
+        margin-top: 45px;
+        margin-bottom: 35px;
+    }
+    form
+    {
+        margin-top: 60px;
+        width: 75%;
+    }
+}
+@media screen and (max-height:420px)
+{
+    .dl1
+    {
+        height: 100%;
+    }
+    .loginp1
+    {
+        width:6%;
+        margin-top:14px;
+        margin-bottom: 15px;
+    }
+    form
+    {
+        margin-top: 30px;
+        width: 50%;
+    }
+    .inl1
+    {
+        height: 3%;
+    }
+    .btnl1
+    {
+        height: 3%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="dl1">
+        <img src="../Image/loginicon.png" class="loginp1"><br>
+        <span class="spl1">Forgot Password-Clubmeet</span>
+        <div class="dl2"></div>
+        <form>
+            <label class="lal1">University Email</label>
+            <br>
+            <input type="email" class="inl1" required id="uniqid"><br>
+            <label class="lal1">Mobile No.</label>
+            <br>
+            <input type="number" class="inl1" required id="passid"><br><span id="temp1"></span>
+            <button class="btnl1" onclick="send()">Send OTP</button>
+            <label class="lal1">Enter OTP</label><br>
+            <input type="number" class="inl1" required id="otpid"><br>
+            <button class="btnl1" onclick="validate()">Validate OTP</button>
+        </form>
+    <script>
+        function send()
+        {
+            var a=document.getElementById("passid").value;
+            if(a.length!=10)
+            {
+                document.getElementById("temp1").innerHTML="*Mobile No. must have 10 digits";
+            }
+            else
+            {
+                document.getElementById("temp1").innerHTML="";
+                alert("OTP sent to Mobile No "+a);
+            }
+        }
+        function validate()
+        {
+            var m=document.getElementById("passid").value;
+            var b=document.getElementById("otpid").value;
+            var c="1165";
+            var d="1001";
+            var e="1197";
+            if(b==c || b==d ||b==e)
+            {
+                alert("Your Reset Password link has been sent to your Mobile no "+m);
+                document.getElementsByTagName("form")[0].action="index.html";
+            }
+            else
+            {
+                alert("Please enter correct OTP");
+            }
+
+        }
+    </script>
+</body>
+</html>
