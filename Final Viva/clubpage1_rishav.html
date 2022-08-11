@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Page 1</title>
+    <link rel="shortcut icon" href="../Image/clubmeet.png" type="image/x-icon">
+    <link rel="stylesheet" href="clubpage1_rishav.css">
+</head>
+<body>
+    <!-- Navigation Bar (done)
+    ANimations
+    </Footer> -->
+    <!-- Navigation Bar -->
+    <section class="sec7">
+        <nav class="navc1 h-nav">
+            <a href="homepage_rs_parth.html" class="headc1 v-class">Home</a>
+            <a href="clubpage2_rohit.html" class="headc2 v-class">Clubpage2</a>
+            <a href="developers_rishav.html" class="headc3 v-class">Developers</a>
+            <a href="homepage_rs_parth.html#anchor_contactus" class="headc4 v-class">Contact</a>
+            <a href="homepage_rs_parth.html#anchor_feedback" class="headc5 v-class">Feedback</a>
+            <input list="clubs" class="inc1 v-class" placeholder="Search here..."><datalist id="clubs">
+                <option>IEICUIET</option>
+                <option>ACMSC</option>
+                <option>GDSC</option>
+                <option>IEEE</option>
+            </datalist>
+            <button class="btnc1 v-class" onclick="clubsrch()"></button>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <span class="spme1">CLUBMEET</span>
+        </nav>
+        <!-- Club Name -->
+        <header class="ieht1" id="anchor_ieht1" >IEICUIET</header>
+        <!-- Div for Displayflex- Contains Description and Animation -->
+        <div class="allie1" id="ieid">
+            <!-- Div for animation -->
+            <div class="ie1">
+
+            </div>
+            <!-- Club Description -->
+            <div class="ab1">
+                <p>IE(I) Student Chapter,Chitkara University is one of the growing technical society in the university.</p>
+                <p>The society has been giving back to back successful events which have proved to be really helpful for the participants and 
+                    also given them an opportunity to explore more and have and have a clear direction for their goals.
+                </p>
+            </div>
+        </div>
+    <!-- Meetings for clubname -->
+    <div class="meetnm1">
+        For existing members:<br>
+        <label class="la3">Date:</label><input type="date" class="indt" id="dtid1" oninput="slctm1()">
+        <label class="la1">Meetings:</label>
+        <select class="set1">
+            <option>Select Date to view the recent meetings</option>
+        </select>
+        <label class="la2">Events:</label>
+        <select class="set2">
+            <option>Select Date to view upcoming/ongoing events
+            </option>
+        </select><br>
+        <button class="btncp1" onclick="rgstr1()">Register</button><br>
+        Not a member! Get membership here:<br>
+        <input type="radio" class="inme1" name="radio1"><span class="spcp1">&nbspRs.536</span>
+        <button class="btncp2" onclick="pay1()">Pay</button>
+    </div>
+    <!-- Second Club Heading -->
+    <header class="acmht1" id="anchor_acmht1">ACMSC</header>
+    <div class="allacm" id="acmid"><div class="ab2"><p>The Chitkara University ACM Student Chapter is an official student body Chartered on 28 February 2010.</p><p>This Chapter aims at creating a technomotive environment for the students of the Computer Science field apart from their regular course content.The forte of the chapter is to provide prerequisite knowledge along with competitive coding.</p></div><div class="acm1">
+    </div>
+</div>
+<div class="meetnm2">
+    For existing members:<br>
+    <label class="la6">Date:</label><input type="date" class="indt1" id="dtid2" oninput="slctm2()">
+    <label class="la4">Meetings:</label>
+    <select class="set3">
+        <option>Select Date to view the recent meetings</option>
+    </select>
+    <label class="la5">Events:</label>
+    <select class="set4">
+        <option>Select Date to view upcoming/ongoing events
+        </option>
+    </select><br>
+    <button class="btncp3" onclick="rgstr2()">Register</button><br>
+    Not a member! Get membership here:<br>
+    <input type="radio" class="inme2" name="radio1"><span class="spcp2">&nbspRs.350</span>
+    <button class="btncp4" onclick="pay2()">Pay</button>
+</div>
+<header class="gdscht1" id="anchor_gdscht1">GDSC</header>
+<div class="allgdsc" id="gdscid"><div class="gdsc1"></div><div class="ab3"><p> Developer Student Clubs (DSC) 🎉 are community groups for students from any academic background in their undergraduate or graduate term.</p><p> By joining a DSC, students build their professional and personal network, get access to Google Developer Resources, and work together to build solutions for local problems in a peer - to - peer learning environment.🔥</p></div>
+</div>
+<div class="meetnm3">
+    For existing members:<br>
+    <label class="la7">Date:</label><input type="date" class="indt2" id="dtid3" oninput="slctm3()">
+    <label class="la8">Meetings:</label>
+    <select class="set5">
+        <option>Select Date to view the recent meetings</option>
+    </select>
+    <label class="la9">Events:</label>
+    <select class="set6">
+        <option>Select Date to view upcoming/ongoing events
+        </option>
+    </select><br>
+    <button class="btncp5" onclick="rgstr3()">Register</button><br>
+    Not a member! Get membership here:<br>
+    <span class="spcp3">E-mail:</span><input type="email" class="inme3" placeholder="Enter your email">
+    <button class="btncp6" onclick="join1()">Join Now</button>
+</div>
+<header class="ieeeht1" id="anchor_ieeeht1">IEEE</header>
+<div class="allieee" id="ieeeid"><div class="ab4"><p>It was in 2009 when IEEE student branch was established at Chitkara University’s Punjab campus. When the branch was launched, there were 12 student members and three faculty members.</p><p>Since then, a lot of interest has been expressed by student members in organizing and conducting various activities under IEEE flagship.</p></div><div class="ieee1"></div></div>
+<div class="meetnm4">
+    For existing members:<br>
+    <label class="la10">Date:</label><input type="date" class="indt3" id="dtid4" oninput="slctm4()">
+    <label class="la11">Meetings:</label>
+    <select class="set7">
+        <option>Select Date to view the recent meetings</option>
+    </select>
+    <label class="la12">Events:</label>
+    <select class="set8">
+        <option>Select Date to view upcoming/ongoing events
+        </option>
+    </select><br>
+    <button class="btncp7" onclick="rgstr4()">Register</button><br>
+    Not a member! Get membership here:<br>
+    <input type="radio" class="inme4" name="radio1"><span class="spcp4">&nbspRs.250</span>
+    <button class="btncp8" onclick="pay3()">Pay</button>
+</div>
+<footer class="ftu1">
+    <div class="adf">
+    <div class="df1">
+        <span class="spf2">CLUBMEET...</span><br>The future of clubs and meetings is here
+    </div>
+<ul type=none class="uf1">
+    <li><a href="homepage_rs_parth.html" class="uaf1">Home</a></li>
+    <li><a href="homepage_rs_parth.html#anchor_about" class="uaf1">About</a></li>
+    <li><a href="homepage_rs_parth.html#anchor_contactus" class="uaf1">Contact</a></li>
+    <li><a href="#" class="uaf1">FAQ</a></li>
+</ul>
+<div class="cnt1">
+    <a href="#"><img src="../Image/fb1.png" width="35px" height="35px" class="solo1"></a>&nbsp&nbsp
+    <a href="#"><img src="../Image/ins1.png" width="35px" height="35px" class="solo2"></a>
+</div>
+</div>
+<hr class="hr1">
+<div class="dfl2">
+        <span class="spf1">Copyright &nbsp&COPY;&nbsp  Club Meet&nbsp .&nbsp  All Rights Reserved</span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Services</a>
+    </div>
+</footer>
+    </section>
+    <script>
+        
+    burger=document.querySelector('.burger')
+    navbar=document.querySelector('.navc1')
+    inpbtn=document.querySelector('.inc1')
+    srchbtn=document.querySelector('.btnc1')
+    navlist=document.querySelector('.headc1')
+    navlist2=document.querySelector('.headc2')
+    navlist3=document.querySelector('.headc3')
+    navlist4=document.querySelector('.headc4')
+    navlist5=document.querySelector('.headc5')
+    burger.addEventListener('click',()=>{
+        navbar.classList.toggle('h-nav');
+        srchbtn.classList.toggle('v-class');
+        inpbtn.classList.toggle('v-class');
+        navlist.classList.toggle('v-class');
+        navlist2.classList.toggle('v-class');
+        navlist3.classList.toggle('v-class');
+        navlist4.classList.toggle('v-class');
+        navlist5.classList.toggle('v-class');
+        
+    })
+    function clubsrch()
+    {
+        var b=document.getElementsByClassName("inc1")[0].value;
+        var a="IEICUIET";
+        var c="ACMSC";
+        var d="GDSC";
+        var e="IEEE";
+        if (b==a)
+        {
+            window.location="#ieid";
+        }
+        else if (b==c)
+        {
+            window.location="#acmid"
+        }
+        else if (b==d)
+        {
+            window.location="#gdscid"
+        }
+        else if (b==e)
+        {
+            window.location="#ieeeid"
+        }
+        else
+        {
+            alert("Please enter valid Club Name")
+        }
+    }
+    function slctm1()
+    {
+        var a=document.getElementById("dtid1").value;
+        var b="2022-01-26";
+        var c="2022-01-27";
+        if (a==b)
+        {
+            document.getElementsByClassName("set1")[0].innerHTML="<option>Republic Day Celebrations(12:00 PM,Zoom)</option>";
+            document.getElementsByClassName("set2")[0].innerHTML="<option>Republic Day Celebrations(12:00 PM,Auditorium)</option>";
+        }
+        else if (a==c)
+        {
+            document.getElementsByClassName("set1")[0].innerHTML="<option>Introduction to club(12:00 PM,Zoom)</option>";
+            document.getElementsByClassName("set2")[0].innerHTML="<option>Introduction to club(12:00 PM,Auditorium)</option>";
+        }
+        else
+        {
+            alert("Select date upto next two days");
+            document.getElementsByClassName("set1")[0].innerHTML="<option>Select Date to view the recent meetings</option>";
+            document.getElementsByClassName("set2")[0].innerHTML="<option>Select Date to view upcoming/ongoing events</option>";
+        }
+    }
+    function slctm2()
+    {
+        var a=document.getElementById("dtid2").value;
+        var b="2022-01-26";
+        var c="2022-01-27";
+        if (a==b)
+        {
+            document.getElementsByClassName("set3")[0].innerHTML="<option>Republic Day Celebrations(12:00 PM,Zoom)</option>";
+            document.getElementsByClassName("set4")[0].innerHTML="<option>Republic Day Celebrations(12:00 PM,Auditorium)</option>";
+        }
+        else if (a==c)
+        {
+            document.getElementsByClassName("set3")[0].innerHTML="<option>Introduction to club(12:00 PM,Zoom)</option>";
+            document.getElementsByClassName("set4")[0].innerHTML="<option>Introduction to club(12:00 PM,Auditorium)</option>";
+        }
+        else
+        {
+            alert("Select date upto next two days");
+            document.getElementsByClassName("set3")[0].innerHTML="<option>Select Date to view the recent meetings</option>";
+            document.getElementsByClassName("set4")[0].innerHTML="<option>Select Date to view upcoming/ongoing events</option>";
+        }
+    }
+    function slctm3()
+    {
+        var a=document.getElementById("dtid3").value;
+        var b="2022-01-26";
+        var c="2022-01-27";
+        if (a==b)
+        {
+            document.getElementsByClassName("set5")[0].innerHTML="<option>Republic Day Celebrations(12:00 PM,Zoom)</option>";
+            document.getElementsByClassName("set6")[0].innerHTML="<option>Republic Day Celebrations(12:00 PM,Auditorium)</option>";
+        }
+        else if (a==c)
+        {
+            document.getElementsByClassName("set5")[0].innerHTML="<option>Introduction to club(12:00 PM,Zoom)</option>";
+            document.getElementsByClassName("set6")[0].innerHTML="<option>Introduction to club(12:00 PM,Auditorium)</option>";
+        }
+        else
+        {
+            alert("Select date upto next two days");
+            document.getElementsByClassName("set5")[0].innerHTML="<option>Select Date to view the recent meetings</option>";
+            document.getElementsByClassName("set6")[0].innerHTML="<option>Select Date to view upcoming/ongoing events</option>";
+        }
+    }
+    function slctm4()
+    {
+        var a=document.getElementById("dtid4").value;
+        var b="2022-01-26";
+        var c="2022-01-27";
+        if (a==b)
+        {
+            document.getElementsByClassName("set7")[0].innerHTML="<option>Republic Day Celebrations(12:00 PM,Zoom)</option>";
+            document.getElementsByClassName("set8")[0].innerHTML="<option>Republic Day Celebrations(12:00 PM,Auditorium)</option>";
+        }
+        else if (a==c)
+        {
+            document.getElementsByClassName("set7")[0].innerHTML="<option>Introduction to club(12:00 PM,Zoom)</option>";
+            document.getElementsByClassName("set8")[0].innerHTML="<option>Introduction to club(12:00 PM,Auditorium)</option>";
+        }
+        else
+        {
+            alert("Select date upto next two days");
+            document.getElementsByClassName("set7")[0].innerHTML="<option>Select Date to view the recent meetings</option>";
+            document.getElementsByClassName("set8")[0].innerHTML="<option>Select Date to view upcoming/ongoing events</option>";
+        }
+    }
+    function rgstr1()
+    {
+        var a=document.getElementById("dtid1").value;
+        var b="2022-01-26";
+        var c="2022-01-27";
+        if (a==b)
+        {
+            window.location="https://us05web.zoom.us/j/84623750069?pwd=c3RqRUlVVHZoRVBRSlpMWTRxSnhNZz09";
+        }
+        else if (a==c)
+        {
+            window.location="https://us05web.zoom.us/j/89188615956?pwd=ZTFaZmp4V2RoS1JlTVFjTmpzc0RRdz09";
+        }
+        else
+        {
+            alert("Select date upto next two days");
+        }
+    }
+    function rgstr2()
+    {
+        var a=document.getElementById("dtid2").value;
+        var b="2022-01-26";
+        var c="2022-01-27";
+        if (a==b)
+        {
+            window.location="https://us05web.zoom.us/j/84623750069?pwd=c3RqRUlVVHZoRVBRSlpMWTRxSnhNZz09";
+        }
+        else if (a==c)
+        {
+            window.location="https://us05web.zoom.us/j/89188615956?pwd=ZTFaZmp4V2RoS1JlTVFjTmpzc0RRdz09";
+        }
+        else
+        {
+            alert("Select date upto next two days");
+        }
+    }
+    function rgstr3()
+    {
+        var a=document.getElementById("dtid3").value;
+        var b="2022-01-26";
+        var c="2022-01-27";
+        if (a==b)
+        {
+            window.location="https://us05web.zoom.us/j/84623750069?pwd=c3RqRUlVVHZoRVBRSlpMWTRxSnhNZz09";
+        }
+        else if (a==c)
+        {
+            window.location="https://us05web.zoom.us/j/89188615956?pwd=ZTFaZmp4V2RoS1JlTVFjTmpzc0RRdz09";
+        }
+        else
+        {
+            alert("Select date upto next two days");
+        }
+    }
+    function rgstr4()
+    {
+        var a=document.getElementById("dtid4").value;
+        var b="2022-01-26";
+        var c="2022-01-27";
+        if (a==b)
+        {
+            window.location="https://us05web.zoom.us/j/84623750069?pwd=c3RqRUlVVHZoRVBRSlpMWTRxSnhNZz09";
+        }
+        else if (a==c)
+        {
+            window.location="https://us05web.zoom.us/j/89188615956?pwd=ZTFaZmp4V2RoS1JlTVFjTmpzc0RRdz09";
+        }
+        else
+        {
+            alert("Select date upto next two days");
+        }
+    }
+    function pay1()
+    {
+        if (document.getElementsByClassName("inme1")[0].checked)
+        {
+            
+       
+            var temp=document.getElementsByClassName("spcp1")[0].innerText;
+            localStorage.setItem("locclubpayment", temp);
+            localStorage.setItem("locclubname", "IEICUIET");
+        
+            window.location="paymentpage_rohit.html";
+        }
+        else
+        {
+            alert("Please check the amount button to proceed.")
+        }
+
+        
+    }
+    function pay2()
+    {
+        if (document.getElementsByClassName("inme2")[0].checked)
+        {
+            var temp=document.getElementsByClassName("spcp2")[0].innerText;
+            localStorage.setItem("locclubpayment", temp);
+            localStorage.setItem("locclubname", "ACMSC");
+            window.location="paymentpage_rohit.html"
+        }
+        else
+        {
+            alert("Please check the amount button to proceed.")
+        }
+    }
+    function pay3()
+    {
+        if (document.getElementsByClassName("inme4")[0].checked)
+        {
+            var temp=document.getElementsByClassName("spcp4")[0].innerText;
+            localStorage.setItem("locclubpayment", temp);
+            localStorage.setItem("locclubname", "IEEE");
+            window.location="paymentpage_rohit.html"
+        }
+        else
+        {
+            alert("Please check the amount button to proceed.")
+        }
+    }
+    function join1()
+    {
+        if (document.getElementsByClassName("inme3")[0].value=="")
+        {
+            alert("Please enter your University Email Id");
+        }
+        else
+        {
+            var k="@chitkara.edu.in";
+            var j=document.getElementsByClassName("inme3")[0].value;
+            if (j.includes(k))
+            {
+                alert("Your request has been forwarded to GDSC team.Check your mail for further details.")
+            }
+            else
+            {
+                alert("Please enter valid Email-Id")
+            }
+        }
+    }
+
+    
+    </script>
+</body>
+</html>

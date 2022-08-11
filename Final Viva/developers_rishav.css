@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Poppins:wght@300&family=Ubuntu&display=swap');
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+.secd1
+{
+    background-image:linear-gradient(to top right,rgb(28, 30, 34) 45%,rgb(41, 67, 85),rgb(36, 54, 68));
+    background-size:cover;
+    background-attachment: fixed;
+}
+.navd1
+{
+    display: flex;
+    width:100%;
+    background-image: linear-gradient(to top right,rgb(27, 27, 29) 50%,rgb(26, 36, 46));
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.headd1,.headd2,.headd3
+{
+    font-family: 'Poppins',sans-serif;
+    font-size:18px;
+    color:rgb(204, 231, 250);
+    text-decoration: none;
+    margin:auto;
+    animation: clrchng 2s linear infinite;
+}
+@keyframes clrchng
+{
+    0%
+    {
+        color:rgb(204, 231, 250);
+    }
+    100%
+    {
+        color: rgb(192, 247, 156);
+    }
+}
+.headd1:hover
+{
+    color:rgb(185, 160, 160);
+    transform: scale(1.4);
+}
+.headd2:hover
+{
+    color:rgb(185, 160, 160);
+    transform: scale(1.4);
+}
+.headd3:hover
+{
+    color:rgb(185, 160, 160);
+    transform: scale(1.4);
+}
+.artd1
+{
+    margin:auto;
+    margin-top:80px;
+    margin-bottom: 100px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size:1.4vw;
+    width:36%;
+    padding:25px;
+    border-radius: 20px;
+    background-color: rgb(34, 32, 36);
+    opacity: 0.7;
+    text-align: center;
+    box-shadow: 16px 10px 14px rgb(5, 5, 5);
+}
+.imgcnt
+{
+    width:39%;
+    background-color:rgb(34, 32,36);
+    opacity: 0.7;
+    padding:35px;
+    border-radius: 20px;
+    margin:auto;
+    margin-top:80px;
+    margin-bottom: 100px;
+    box-shadow: 16px 10px 14px rgb(5, 5, 5);
+}
+.spd1
+{
+    font-family: 'Poppins',sans-serif;
+    font-size:1.7vw;
+    color: rgb(219, 5, 94);
+}
+.sdn1
+{
+    font-family: 'Poppins',sans-serif;
+    font-size:1.7vw;
+    color: rgb(18, 233, 186);
+}
+.artprr
+{
+    display: flex;
+}
+.flx1,.flx2
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4px;
+}
+.flx2{
+    margin-top:40px;
+}
+.spd2
+{
+    position: relative;
+    width:44%;
+    height:29vh;
+    border-bottom-right-radius: 25px;
+    background-image: url(../Image/Rishav001.jpg);
+    background-size: cover;
+    box-shadow:10px 10px 10px rgb(3, 202, 152);
+    animation: rishav 10s infinite;
+    animation-timing-function: linear;
+    left:5%;
+
+}
+@keyframes rishav
+{
+    0%
+    {
+        background-image: url(../Image/Rishav001.jpg);
+        box-shadow:10px 10px 10px rgb(3, 202, 152);
+    }
+    50%
+    {
+        background-image: url(../Image/Parth001.jpg);
+        box-shadow:10px 10px 10px rgb(221, 114, 14);
+    }
+    75%
+    {
+        background-image: url(../Image/Rohit001.jpg);
+        box-shadow:10px 10px 10px rgb(89, 31, 184);
+    }
+    100%
+    {
+        background-image: url(../Image/clubmeet.png);
+        box-shadow:10px 10px 10px rgb(57, 173, 53);
+    }
+}
+.spd3
+{
+    width:44%;
+    height:29vh;
+    position: relative;
+    left: 5%;
+    border-top-right-radius: 25px;
+    background-image: url(../Image/Parth001.jpg);
+    background-size: cover;
+    box-shadow: 10px -10px 10px rgb(8, 204, 211);
+    animation: parth 10s infinite;
+    animation-timing-function: linear;
+}
+@keyframes parth
+{
+    0%
+    {
+        background-image: url(../Image/Parth001.jpg);
+        box-shadow: 10px -10px 10px rgb(8,203,211);
+    }
+    50%
+    {
+        background-image: url(../Image/Rohit001.jpg);
+        box-shadow: 10px -10px 10px rgb(202, 199, 14);
+    }
+    75%
+    {
+        background-image: url(../Image/clubmeet.png);
+        box-shadow: 10px -10px 10px rgb(230, 12, 41);
+    }
+    100%
+    {
+        background-image: url(../Image/Rishav001.jpg);
+        box-shadow: 10px -10px 10px rgb(20, 23, 216);
+    }
+}
+.spd4
+{
+    width:44%;
+    height:29vh;
+    position: relative;
+    right: 5%;
+    border-top-left-radius: 25px;
+    background-image: url(../Image/Rohit001.jpg);
+    background-size: cover;
+    box-shadow: -10px -10px 10px rgb(3, 202, 152);
+    animation: rohit 10s infinite;
+    animation-timing-function:linear;
+}
+@keyframes rohit
+{
+    0%
+    {
+        background-image: url(../Image/Rohit001.jpg);
+        box-shadow: -10px -10px 10px rgb(3, 202, 152);
+    }
+    50%
+    {
+        background-image: url(../Image/clubmeet.png);
+        box-shadow: -10px -10px 10px rgb(221, 114,14);
+    }
+    75%
+    {
+        background-image: url(../Image/Rishav001.jpg);
+        box-shadow: -10px -10px 10px rgb(89, 31, 184);
+    }
+    100%
+    {
+        background-image: url(../Image/Parth001.jpg);
+        box-shadow: -10px -10px 10px rgb(57, 173,53);
+    }
+}
+.spd5
+{
+    width:44%;
+    position: relative;
+    right: 5%;
+    height:29vh;
+    border-bottom-left-radius: 25px;
+    background-image: url(../Image/clubmeet.png);
+    background-size: cover;
+    box-shadow: -10px 10px 10px rgb(8, 207, 207);
+    animation: clubmeet 10s infinite;
+    animation-timing-function: linear;
+}
+@keyframes clubmeet
+{
+    0%
+    {
+        background-image: url(../Image/clubmeet.png);
+        box-shadow: -10px 10px 10px rgb(8, 207, 207);
+    }
+    50%
+    {
+        background-image: url(../Image/Rishav001.jpg);
+        box-shadow: -10px 10px 10px rgb(202,199, 14);
+    }
+    75%
+    {
+        background-image: url(../Image/Parth001.jpg);
+        box-shadow: -10px 10px 10px rgb(230, 12, 41);
+    }
+    100%
+    {
+        background-image: url(../Image/Rohit001.jpg);
+        box-shadow: -10px 10px 10px rgb(20, 23, 216);
+    }
+}
+.spd2,.spd3,.spd4,.spd5
+{
+    background-position: center;
+}
+.ftu1
+{
+    margin-bottom: 0px;
+    padding:28px;
+    padding-top: 12px;
+    margin-top:10vh;
+    width: 100%;
+    background-color: rgb(15, 19, 26);
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    opacity: 0.8;
+}
+.spf2
+{
+    color: rgb(231, 46, 14);
+    font-size: 25px;
+}
+.uf1
+{
+    display: flex;
+    margin-top: 10px;
+    margin-left:6vw;
+}
+.adf
+{
+    margin-bottom: 6px;
+    display: flex;
+}
+.uaf1
+{
+    text-decoration: none;
+    color: rgb(196, 75, 86);
+    font-size: 17px;
+    margin-right:3vw;
+}
+.solo1
+{
+    background-color: rgb(218, 153, 144);
+    border-radius:50%;
+}
+.solo2
+{
+    background-color: rgb(218, 153, 144);
+    border-radius: 10px;
+}
+.dfl2
+{
+    margin-top: 7px;
+    font-size: 11px;
+}
+.dfl2 a
+{
+    text-decoration: none;
+    color: white;
+    margin-left:5vw;
+}
+.spf1
+{
+    margin-right:45vw;
+}
+.cnt1
+{
+    display: flex;
+    padding-top: 5px;
+    margin-left:12vw;
+}
+.uaf1:hover
+{
+    color: rgb(122, 23, 23);
+}
+@media screen and (min-width:581px) and (max-width:860px)
+{
+    .artprr
+    {
+        flex-direction: column;
+    }
+    .artd1{
+        width:70%;
+        font-size:20px;
+        margin-bottom: 40px;
+    }
+    .spd1
+    {
+        font-size: 22px;
+    }
+    .sdn1
+    {
+        font-size: 21px;
+    }
+    .imgcnt{
+        margin-top: 30px;
+        width:70%;
+        padding:35px;
+    }
+    .spd2,.spd3,.spd4,.spd5
+    {
+        width:42%;
+        height:18vh;
+    }
+    .uf1
+    {
+        flex-direction: column;
+    }
+    .cnt1
+    {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:580px)
+{
+    .ftu1{
+        width:100%;
+    }
+    .uf1{
+        flex-direction: column;
+    }
+    .cnt1{
+        margin-left: 15px;
+        flex-direction: column;
+    }
+    .spf1{
+        margin-right: 70px;
+    }
+    .dfl2 a
+    {
+        margin-left:10px;
+    }
+    .artprr
+    {
+        flex-direction: column;
+    }
+    .artd1
+    {
+        width: 80%;
+        margin-top: 45px;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .spd1{font-size: 18px;}
+    .sdn1{font-size: 17px;}
+    .imgcnt
+    {
+        margin-top: 30px;
+        width: 80%;
+        padding: 15px;
+    }
+    .spd2,.spd3,.spd4,.spd5
+    {
+        width:50%;
+        height:140px;
+    }
+    .spd5,.spd4{right: initial;}
+    .spd2,.spd3{left: initial;}
+    .flx2
+    {
+        margin-top: 10px;
+    }
+
+}
+@media screen and (max-height:520px)
+{
+    .cnt1
+    {
+        flex-direction: column;
+    }
+    .artprr
+    {
+        flex-direction: column;
+    }
+    .artd1{
+        width:70%;
+        font-size:20px;
+        margin-bottom: 40px;
+    }
+    .spd1
+    {
+        font-size: 22px;
+    }
+    .sdn1
+    {
+        font-size: 21px;
+    }
+    .imgcnt{
+        margin-top: 30px;
+        width:70%;
+        padding:35px;
+    }
+    .spd2,.spd3,.spd4,.spd5{
+        width:40%;
+        height: 170px;
+    }
+}
