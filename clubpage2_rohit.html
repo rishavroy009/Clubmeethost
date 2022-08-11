@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Page 2</title>
+    <link rel="shortcut icon" href="../Image/clubmeet.png" type="image/x-icon">
+    <link rel="stylesheet" href="clubpage2_rohit.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <section class="sec7">
+        <nav class="navc1 h-nav">
+            <a href="homepage_rs_parth.html" class="headc1 v-class">Home</a>
+            <a href="clubpage1_rishav.html" class="headc2 v-class">Clubpage1</a>
+            <a href="developers_rishav.html" class="headc3 v-class">Developers</a>
+            <a href="homepage_rs_parth.html#anchor_contactus" class="headc4 v-class">Contact</a>
+            <a href="homepage_rs_parth.html#anchor_feedback" class="headc5 v-class">Feedback</a>
+            <input list="clubs" class="inc1 v-class" placeholder="Search here..."><datalist id="clubs">
+                <option>BHANGRA REGIMENT</option>
+                <option>TASVEER</option>
+                <option>DHVANI</option>
+                <option>LITERAYLLIS</option>
+            </datalist>
+            <button class="btnc1 v-class" onclick="clubsrch()"></button>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <span class="spme1">CLUBMEET</span>
+        </nav>
+        <!-- Club Name -->
+        <header class="ieht1" id="anchor_tbr" >THE BHANGRA REGIMENT</header>
+        <!-- Div for Displayflex- Contains Description and Animation -->
+        <div class="allie1" id="ieid">
+            <!-- Div for animation -->
+            <div class="ie1">
+
+            </div>
+            <!-- Club Description -->
+            <div class="ab1">
+                For existing members:<br>
+                <label class="la3">Date:</label><input type="date" class="indt" id="dtid1" oninput="slctm1()">
+                <br><label class="la2">Events:</label>
+                <select class="set2">
+                    <option>Select Date to view upcoming/ongoing events
+                    </option>
+                </select><br>
+                <button class="btncp1" onclick="rgstr1()">Register</button><br>
+                Not a member! Get membership here:<br>
+                <input type="radio" class="inme1" name="radio2"><span class="spcp1">&nbspRs.300</span>
+                <button class="btncp2" onclick="pay1()">Pay</button>
+               
+            </div>
+        </div>
+    <!-- Meetings for clubname -->
+    <!-- Second Club Heading -->
+    <header class="acmht1" id="anchor_tv">TASVEER</header>
+    <div class="allacm" id="acmid"><div class="ab2">
+        For existing members:<br>
+        <label class="la6">Date:</label><input type="date" class="indt1" id="dtid2" oninput="slctm2()">
+        <br><label class="la5">Events:</label>
+        <select class="set4">
+            <option>Select Date to view upcoming/ongoing events
+            </option>
+        </select><br>
+        <button class="btncp3" onclick="rgstr2()">Register</button><br>
+        Not a member! Get membership here:<br>
+        <input type="radio" class="inme2" name="radio2"><span class="spcp2">&nbspRs.200</span>
+        <button class="btncp4" onclick="pay2()">Pay</button>
+    </div><div class="acm1">
+    </div>
+</div>
+<header class="gdscht1" id="anchor_dv">DHVANI</header>
+<div class="allgdsc" id="gdscid"><div class="gdsc1"></div><div class="ab3">
+    For existing members:<br>
+    <label class="la7">Date:</label><input type="date" class="indt2" id="dtid3" oninput="slctm3()">
+    <br><label class="la9">Events:</label>
+    <select class="set6">
+        <option>Select Date to view upcoming/ongoing events
+        </option>
+    </select><br>
+    <button class="btncp5" onclick="rgstr3()">Register</button><br>
+    Not a member! Get membership here:<br>
+    <input type="radio" class="inme3" name="radio2"><span class="spcp3">&nbspRs.230</span>
+    <button class="btncp6" onclick="pay3()">Pay</button>
+</div>
+</div>
+<header class="ieeeht1" id="anchor_ltr">LITERAYLLIS</header>
+<div class="allieee" id="ieeeid"><div class="ab4">
+    For existing members:<br>
+    <label class="la10">Date:</label><input type="date" class="indt3" id="dtid4" oninput="slctm4()">
+    <br><label class="la12">Events:</label>
+    <select class="set8">
+        <option>Select Date to view upcoming/ongoing events
+        </option>
+    </select><br>
+    <button class="btncp7" onclick="rgstr4()">Register</button><br>
+    Not a member! Get membership here:<br>
+    <input type="radio" class="inme4" name="radio2"><span class="spcp4">&nbspRs.200</span>
+    <button class="btncp8" onclick="pay4()">Pay</button>
+</div><div class="ieee1"></div></div>
+<footer class="ftu1">
+    <div class="adf">
+    <div class="df1">
+        <span class="spf2">CLUBMEET...</span><br>The future of clubs and meetings is here
+    </div>
+<ul type=none class="uf1">
+    <li><a href="homepage_rs_parth.html" class="uaf1">Home</a></li>
+    <li><a href="homepage_rs_parth.html#anchor_about" class="uaf1">About</a></li>
+    <li><a href="homepage_rs_parth.html#anchor_contactus" class="uaf1">Contact</a></li>
+    <li><a href="#" class="uaf1">FAQ</a></li>
+</ul>
+<div class="cnt1">
+    <a href="#"><img src="../Image/fb1.png" width="35px" height="35px" class="solo1"></a>&nbsp&nbsp
+    <a href="#"><img src="../Image/ins1.png" width="35px" height="35px" class="solo2"></a>
+</div>
+</div>
+<hr class="hr1">
+<div class="dfl2">
+        <span class="spf1">Copyright &nbsp&COPY;&nbsp  Club Meet&nbsp .&nbsp  All Rights Reserved</span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Services</a>
+    </div>
+</footer>
+</section>
+<script>
+    function clubsrch()
+    {
+        var k=document.getElementsByClassName("inc1")[0].value;
+        var a="BHANGRA REGIMENT";
+        var b="TASVEER";
+        var c="DHVANI";
+        var d="LITERAYLLIS";
+        if (k==a)
+        {
+            window.location="#ieid";
+        }
+        else if (k==b)
+        {
+            window.location="#acmid";
+        }
+        else if (k==c)
+        {
+            window.location="#gdscid";
+        }
+        else if (k==d)
+        {
+            window.location="#ieeeid";
+        }
+        else
+        {
+            alert("Please Enter Valid Club Name");
+        }
+    }
+    function slctm1()
+    {
+        var k=document.getElementById("dtid1").value;
+        var a="2022-01-26";
+        var b="2022-01-27";
+        if (k==a)
+        {
+            document.getElementsByClassName("set2")[0].innerHTML="<option> Republic Day Celebration(12:00 PM, Auditorium)</option>";
+        }
+        else if (k==b)
+        {
+            document.getElementsByClassName("set2")[0].innerHTML="<option> Engenering First Year Orientation(12:00 PM, Auditorium)</option>";
+        }
+        else 
+        {
+            alert("Please Select date Upto Next 2 days");
+            document.getElementsByClassName("set2")[0].innerHTML="<option>Select Date to view upcoming/ongoing events</option>";
+        }
+    }
+    function slctm2()
+    {
+        var k=document.getElementById("dtid2").value;
+        var a="2022-01-26";
+        var b="2022-01-27";
+        if (k==a)
+        {
+            document.getElementsByClassName("set4")[0].innerHTML="<option> Republic Day Celebration(12:00 PM, Auditorium)</option>";
+        }
+        else if (k==b)
+        {
+            document.getElementsByClassName("set4")[0].innerHTML="<option> Engenering First Year Orientation(12:00 PM, Auditorium)</option>";
+        }
+        else 
+        {
+            alert("Please Select date Upto Next 2 days");
+            document.getElementsByClassName("set4")[0].innerHTML="<option>Select Date to view upcoming/ongoing events</option>";
+        }
+    }
+    function slctm3()
+    {
+        var k=document.getElementById("dtid3").value;
+        var a="2022-01-26";
+        var b="2022-01-27";
+        if (k==a)
+        {
+            document.getElementsByClassName("set6")[0].innerHTML="<option> Republic Day Celebration(12:00 PM, Auditorium)</option>";
+        }
+        else if (k==b)
+        {
+            document.getElementsByClassName("set6")[0].innerHTML="<option> Engenering First Year Orientation(12:00 PM, Auditorium)</option>";
+        }
+        else 
+        {
+            alert("Please Select date Upto Next 2 days");
+            document.getElementsByClassName("set6")[0].innerHTML="<option>Select Date to view upcoming/ongoing events</option>";
+        }
+    }
+    function slctm4()
+    {
+        var k=document.getElementById("dtid4").value;
+        var a="2022-01-26";
+        var b="2022-01-27";
+        if (k==a)
+        {
+            document.getElementsByClassName("set8")[0].innerHTML="<option> Republic Day Celebration(12:00 PM, Auditorium)</option>";
+        }
+        else if (k==b)
+        {
+            document.getElementsByClassName("set8")[0].innerHTML="<option> Engenering First Year Orientation(12:00 PM, Auditorium)</option>";
+        }
+        else 
+        {
+            alert("Please Select date Upto Next 2 days");
+            document.getElementsByClassName("set8")[0].innerHTML="<option>Select Date to view upcoming/ongoing events</option>";
+        }
+    }
+    function rgstr1()
+    {
+        var k=document.getElementById("dtid1").value;
+        var a=document.getElementsByClassName("set2")[0].value;
+        var b="Republic Day Celebration(12:00 PM, Auditorium)";
+        var c="Engenering First Year Orientation(12:00 PM, Auditorium)";
+        var d="Select Date to view upcoming/ongoing events";
+        var e="RDC";
+        var f="EFYO";
+        if (a==d)
+        {
+            alert("Please Select Date to register");
+        }
+        else if (a==b)
+        {
+            alert("The Event entry code is " +e+k);
+        }
+        else if (a==c)
+        {
+            alert("The Event entry code is " +f+k);
+        }
+    }
+    function rgstr2()
+    {
+        var k=document.getElementById("dtid2").value;
+        var a=document.getElementsByClassName("set4")[0].value;
+        var b="Republic Day Celebration(12:00 PM, Auditorium)";
+        var c="Engenering First Year Orientation(12:00 PM, Auditorium)";
+        var d="Select Date to view upcoming/ongoing events";
+        var e="RDC";
+        var f="EFYO";
+        if (a==d)
+        {
+            alert("Please Select Date to register");
+        }
+        else if (a==b)
+        {
+            alert("The Event entry code is " +e+k);
+        }
+        else if (a==c)
+        {
+            alert("The Event entry code is " +f+k);
+        }
+    }
+    function rgstr3()
+    {
+        var k=document.getElementById("dtid3").value;
+        var a=document.getElementsByClassName("set6")[0].value;
+        var b="Republic Day Celebration(12:00 PM, Auditorium)";
+        var c="Engenering First Year Orientation(12:00 PM, Auditorium)";
+        var d="Select Date to view upcoming/ongoing events";
+        var e="RDC";
+        var f="EFYO";
+        if (a==d)
+        {
+            alert("Please Select Date to register");
+        }
+        else if (a==b)
+        {
+            alert("The Event entry code is " +e+k);
+        }
+        else if (a==c)
+        {
+            alert("The Event entry code is " +f+k);
+        }
+    }
+    function rgstr4()
+    {
+        var k=document.getElementById("dtid4").value;
+        var a=document.getElementsByClassName("set8")[0].value;
+        var b="Republic Day Celebration(12:00 PM, Auditorium)";
+        var c="Engenering First Year Orientation(12:00 PM, Auditorium)";
+        var d="Select Date to view upcoming/ongoing events";
+        var e="RDC";
+        var f="EFYO";
+        if (a==d)
+        {
+            alert("Please Select Date to register");
+        }
+        else if (a==b)
+        {
+            alert("The Event entry code is " +e+k);
+        }
+        else if (a==c)
+        {
+            alert("The Event entry code is " +f+k);
+        }
+    }
+    function pay1()
+    {
+        if (document.getElementsByClassName("inme1")[0].checked)
+        {
+            var k=document.getElementsByClassName("spcp1")[0].innerText;
+            var a="THE BHANGRA REGIMENT";
+            localStorage.setItem("locclubpayment",k);
+            localStorage.setItem("locclubname",a);
+            window.location="paymentpage_rohit.html";
+        }
+        else 
+        {
+            alert("Please Check The amount Button to Proceed");
+        }
+    }
+    function pay2()
+    {
+        if (document.getElementsByClassName("inme2")[0].checked)
+        {
+            var k=document.getElementsByClassName("spcp2")[0].innerText;
+            var a="TASVEER";
+            localStorage.setItem("locclubpayment",k);
+            localStorage.setItem("locclubname",a);
+            window.location="paymentpage_rohit.html";
+        }
+        else 
+        {
+            alert("Please Check The amount Button to Proceed");
+        }
+    }
+    function pay3()
+    {
+        if (document.getElementsByClassName("inme3")[0].checked)
+        {
+            var k=document.getElementsByClassName("spcp3")[0].innerText;
+            var a="DHVANI";
+            localStorage.setItem("locclubpayment",k);
+            localStorage.setItem("locclubname",a);
+            window.location="paymentpage_rohit.html";
+        }
+        else 
+        {
+            alert("Please Check The amount Button to Proceed");
+        }
+    }
+    function pay4()
+    {
+        if (document.getElementsByClassName("inme4")[0].checked)
+        {
+            var k=document.getElementsByClassName("spcp4")[0].innerText;
+            var a="LITERAYLLIS";
+            localStorage.setItem("locclubpayment",k);
+            localStorage.setItem("locclubname",a);
+            window.location="paymentpage_rohit.html";
+        }
+        else 
+        {
+            alert("Please Check The amount Button to Proceed");
+        }
+    }
+</script>
+</body>
+</html>

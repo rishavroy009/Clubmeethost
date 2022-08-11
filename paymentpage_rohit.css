@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Poppins:wght@300&family=Ubuntu&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+
+
+
+    background-image:linear-gradient(to top right,rgb(28, 30, 34) 45%,rgb(41, 67, 85),rgb(36, 54, 68));
+    background-size:cover;
+    background-attachment: fixed;  
+}
+
+/* Different Headings and Texts  */
+
+.heading{
+    color: ivory;
+
+}
+
+.main_heading{
+    color: rgb(38, 172, 172);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+
+}
+
+.main_subheading{
+    color: rgb(38, 172, 172);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+p input, textarea{
+    font-size: 20px;
+}
+
+
+
+.container {
+    /* background-color: #f2f2f2; */
+    
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    /* background-color: rgb(94, 103, 105); */
+    background-color: rgb(219, 200, 250);
+}
+
+#fcardnumber::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+    display:none;
+}
+
+fieldset{
+    background-color: #fff; 
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    /* background-color: rgb(94, 103, 105); */
+    background-color: rgb(219, 206, 255);
+
+
+}
+
+.main_heading {
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #4daea1;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #4caf84;
+
+}
